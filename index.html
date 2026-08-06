@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cartes de visite — Gendarmerie</title>
+<style>
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:#F5F5F3;color:#1A1A1A;padding:40px 24px;}
+  .wrap{max-width:480px;margin:0 auto;}
+  h1{font-size:18px;}
+  a{display:block;background:#fff;border:1px solid #e2e2e0;padding:14px 16px;margin:8px 0;text-decoration:none;color:#1A1A1A;border-radius:2px;}
+  a:hover{border-color:#DA291C;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Cartes de visite — Gendarmerie</h1>
+  <div id="list">Chargement…</div>
+</div>
+<script>
+fetch('data/cards.json').then(r=>r.json()).then(data=>{
+  const el = document.getElementById('list');
+  const ids = Object.keys(data);
+  if(!ids.length){ el.textContent = "Aucune carte."; return; }
+  el.innerHTML = ids.map(id => `<a href="card.html?id=${id}">${data[id].name}</a>`).join('');
+});
+</script>
+</body>
+</html>
