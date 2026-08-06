@@ -1,0 +1,24 @@
+{
+  "cedrick-charriere": {
+    "name": "Cédrick Charrière",
+    "jobTitle": "Sergent",
+    "org": "Gendarmerie Cantonale Vaudoise",
+    "matricule": "",
+    "phone": "021 316 55 71",
+    "email": "cedrick.charriere@vd.ch",
+    "website": "",
+    "address": "Route de Lausanne 16, 1052 Le Mont-sur-Lausanne",
+    "logo": "Logo-GDM.png"
+  },
+  "simon-boven": {
+    "name": "Simon Boven",
+    "jobTitle": "Gendarme",
+    "org": "Police Cantonale Vaudoise",
+    "matricule": "4839",
+    "phone": "021 316 55 71",
+    "email": "simon.boven@vd.ch",
+    "website": "",
+    "address": "Route de Lausanne 16, 1052 Le Mont-sur-Lausanne",
+    "logo": "Logo-GDM.png"
+  }
+}
