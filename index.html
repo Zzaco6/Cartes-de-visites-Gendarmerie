@@ -9,7 +9,7 @@
   .wrap{max-width:480px;margin:0 auto;}
   h1{font-size:18px;}
   a{display:block;background:#fff;border:1px solid #e2e2e0;padding:14px 16px;margin:8px 0;text-decoration:none;color:#1A1A1A;border-radius:2px;}
-  a:hover{border-color:#DA291C;}
+  a:hover{border-color:#1B4B8A;}
 </style>
 </head>
 <body>
@@ -18,7 +18,7 @@
   <div id="list">Chargement…</div>
 </div>
 <script>
-fetch('data/cards.json').then(r=>r.json()).then(data=>{
+fetch('cards.json', {cache:'no-store'}).then(r=>r.json()).then(data=>{
   const el = document.getElementById('list');
   const ids = Object.keys(data);
   if(!ids.length){ el.textContent = "Aucune carte."; return; }
