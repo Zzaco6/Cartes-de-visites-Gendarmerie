@@ -72,7 +72,7 @@ async function main(){
         <div class="rows">
           ${c.phone ? `<div class="row"><div class="label">Tél.</div><div class="val"><a href="tel:${esc(c.phone)}">${esc(c.phone)}</a></div></div>` : ''}
           ${c.email ? `<div class="row"><div class="label">Email</div><div class="val"><a href="mailto:${esc(c.email)}">${esc(c.email)}</a></div></div>` : ''}
-          ${c.website ? `<div class="row"><div class="label">Site</div><div class="val"><a href="${esc(c.website)}" target="_blank" rel="noopener noreferrer">${esc(c.website.replace(/^https?:\/\//,''))}</a></div></div>` : ''}
+          ${c.website ? `<div class="row"><div class="label">Site</div><div class="val"><a href="${esc(c.website)}" target="_blank" rel="noopener noreferrer">${esc(c.websiteLabel || c.website.replace(/^https?:\/\//,''))}</a></div></div>` : ''}
           ${c.address ? `<div class="row"><div class="label">Adresse</div><div class="val">${esc(c.address).replace(', ', '<br>')}</div></div>` : ''}
         </div>
         <button class="cta" id="save">Enregistrer le contact</button>
