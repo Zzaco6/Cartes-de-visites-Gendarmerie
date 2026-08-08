@@ -37,5 +37,18 @@
     "websiteLabel": "police.vd.ch",
     "address": "Route de Lausanne 16, 1052 Le Mont-sur-Lausanne",
     "logo": "Logo-GDM.png"
+  },
+  "Lorine": {
+    "name": "Lorine ",
+    "jobTitle": "Gendarme",
+    "org": "Police Cantonale Vaudoise",
+    "unit": "Gendarmerie territoriale",
+    "matricule": "1111",
+    "phone": "021 316 55 71",
+    "email": "lorine.@vd.ch",
+    "website": "https://www.vd.ch/djes/polcant",
+    "websiteLabel": "police.vd.ch",
+    "address": "Route de Lausanne 16, 1052 Le Mont-sur-Lausanne",
+    "logo": "Logo-GDM.png"
   }
 }
